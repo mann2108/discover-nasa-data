@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import ParticlesBg  from "particles-bg";
+import ParticlesBg  from 'particles-bg';
+import Loader from 'react-loader-spinner';
 
 class App extends Component {
 
@@ -7,7 +8,13 @@ class App extends Component {
     super(props);
     this.state = {
       foo: 'bar',
-      nasaData: {}
+      nasaData: {},
+      content: {
+        display: "none"
+      },
+      loader: {
+        display: "block"
+      }
     };
   }
 
@@ -18,7 +25,13 @@ class App extends Component {
       .then(
         (result) => {
           this.setState({
-            nasaData:result               
+            nasaData:result,
+            content: {
+              display: "block",      
+            },
+            loader: {
+              display: "none",      
+            }
           });
         }
       )
@@ -40,7 +53,24 @@ class App extends Component {
     return (
       <div className="App">
         
-        <header id="home">
+        <div style={this.state.loader}>
+          
+
+          <header id="home">  
+            <div className="row banner">
+              
+                <Loader type="Watch" color="#00BFFF" height={100} width={100} />
+                
+              
+            </div>
+          </header>
+
+
+        </div>
+
+        
+        
+        <header id="home" style={this.state.content}>  
           <ParticlesBg type="circle" bg={true} />
           <div className="row banner">
             <div className="banner-text">
@@ -54,7 +84,7 @@ class App extends Component {
         </header>
         
 
-        <section id="about">
+        <section id="about" style={this.state.content}>
           
           <div className="row">
              <div>
@@ -72,13 +102,12 @@ class App extends Component {
             <a href="" style={hideUnwanted} className="button btn project-btn"><i className="fa fa-linkedin"></i>LinkedIn</a>
             <a href="https://www.linkedin.com/in/mann-mehta-b3633b172/" className="button btn project-btn"><i className="fa fa-linkedin"></i>LinkedIn</a>
             <a href="https://github.com/mann2108" className="button btn github-btn"><i className="fa fa-github"></i>Github</a>
-            <a href="https://www.instagram.com/manuu2108/" className="button btn project-btn"><i className="fa fa-instagram"></i>Instagram</a>
             </center>
           </ul>
 
           <center>
             <pre>
-            Note - In case there is no image visible then its due to data api request limit overflow, I suggest you to check after sometime.
+            Note - In case if you are seeing default image then its due to overflow of request counts, so check after some time.
             </pre>
             <pre>
             
