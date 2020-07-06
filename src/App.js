@@ -13,7 +13,7 @@ class App extends Component {
 
   
   componentDidMount() {
-    fetch("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY")
+    fetch("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2017-07-13")
       .then(res => res.json())
       .then(
         (result) => {
