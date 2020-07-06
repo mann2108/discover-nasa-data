@@ -59,7 +59,7 @@ class App extends Component {
           <div className="row">
              <div >
                 <center><h2>{this.state.nasaData.title}</h2></center>
-                <img src={this.state.nasaData.hdurl} alt="Nasa APOD Image" />
+                <img src={this.state.nasaData.url} alt="Nasa APOD Image" />
              </div>
              <div className="nine columns main-col">
                 <h2>Explanation - {this.state.nasaData.title}</h2>
