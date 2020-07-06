@@ -29,12 +29,12 @@ npm run build
 
 ## Snapshots (Mobile)
 
-![nasa_4.png](https://github.com/mann2108/discover-nasa-data/blob/master/snapshots/nasa_4.png)
+![nasa_4.jpeg](https://github.com/mann2108/discover-nasa-data/blob/master/snapshots/nasa_4.jpeg)
 
-![nasa_5.png](https://github.com/mann2108/discover-nasa-data/blob/master/snapshots/nasa_5.png)
+![nasa_5.jpeg](https://github.com/mann2108/discover-nasa-data/blob/master/snapshots/nasa_5.jpeg)
 
-![nasa_6.png](https://github.com/mann2108/discover-nasa-data/blob/master/snapshots/nasa_6.png)
+![nasa_6.jpeg](https://github.com/mann2108/discover-nasa-data/blob/master/snapshots/nasa_6.jpeg)
 
-![nasa_7.png](https://github.com/mann2108/discover-nasa-data/blob/master/snapshots/nasa_7.png)
+![nasa_7.jpeg](https://github.com/mann2108/discover-nasa-data/blob/master/snapshots/nasa_7.jpeg)
 
 
