@@ -18,3 +18,23 @@ npm start
 ```shell
 npm run build
 ```
+
+## Snapshots (Dektop)
+
+![nasa_1.png](https://github.com/mann2108/discover-nasa-data/blob/master/snapshots/nasa_1.png)
+
+![nasa_2.png](https://github.com/mann2108/discover-nasa-data/blob/master/snapshots/nasa_2.png)
+
+![nasa_3.png](https://github.com/mann2108/discover-nasa-data/blob/master/snapshots/nasa_3.png)
+
+## Snapshots (Mobile)
+
+![nasa_4.png](https://github.com/mann2108/discover-nasa-data/blob/master/snapshots/nasa_4.png)
+
+![nasa_5.png](https://github.com/mann2108/discover-nasa-data/blob/master/snapshots/nasa_5.png)
+
+![nasa_6.png](https://github.com/mann2108/discover-nasa-data/blob/master/snapshots/nasa_6.png)
+
+![nasa_7.png](https://github.com/mann2108/discover-nasa-data/blob/master/snapshots/nasa_7.png)
+
+
