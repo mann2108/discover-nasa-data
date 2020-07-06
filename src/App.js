@@ -57,11 +57,11 @@ class App extends Component {
         <section id="about">
           
           <div className="row">
-             <div >
+             <div>
                 <center><h2>{this.state.nasaData.title}</h2></center>
                 <img src={this.state.nasaData.url} alt="Nasa APOD Image" />
              </div>
-             <div className="nine columns main-col">
+             <div>
                 <h2>Explanation - {this.state.nasaData.title}</h2>
                 <p>{this.state.nasaData.explanation}</p>
              </div>
