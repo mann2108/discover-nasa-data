@@ -41,31 +41,28 @@ class App extends Component {
   render() {
     
     const imgStyle = {
-        height: "180px",
-        width: "320px"
+      height: "180px",
+      width: "320px"
 
     }
 
     const hideUnwanted = {
-        display : "none"
+      display : "none"
+    }
+
+    const headingStyle = {
+      fontSize: "50px"
     }
 
     return (
       <div className="App">
-        
-        <div style={this.state.loader}>
-          
 
+        <div style={this.state.loader}>
           <header id="home">  
             <div className="row banner">
-              
                 <Loader type="Watch" color="#00BFFF" height={100} width={100} />
-                
-              
             </div>
           </header>
-
-
         </div>
 
         
@@ -74,9 +71,10 @@ class App extends Component {
           <ParticlesBg type="circle" bg={true} />
           <div className="row banner">
             <div className="banner-text">
-              <h1 className="responsive-headline">{this.state.nasaData.title}</h1>
+              <h1 style={headingStyle} className="responsive-headline">Astronomy Picture of the Day</h1>
+              <h3> Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer.</h3>
               <img src="./images/nasa-logo-web-rgb.png" style={imgStyle}/>
-              <h3>Nasa Astronomy Picture of the Day</h3>
+              <h3>Today's Image : {this.state.nasaData.title}</h3>
               <h3>{this.state.nasaData.date}</h3>
               <hr />
             </div>
@@ -88,11 +86,11 @@ class App extends Component {
           
           <div className="row">
              <div>
-                <center><h2>{this.state.nasaData.title}</h2></center>
+                <center><h2>Image : {this.state.nasaData.title}</h2></center>
                 <img src={this.state.nasaData.url} alt="Nasa APOD Image" />
              </div>
              <div>
-                <h2>Explanation - {this.state.nasaData.title}</h2>
+                <h2>Explanation of image - </h2>
                 <p>{this.state.nasaData.explanation}</p>
              </div>
           </div>
@@ -107,7 +105,7 @@ class App extends Component {
 
           <center>
             <pre>
-            Note - In case if you are seeing default image then its due to overflow of request counts, so check after some time.
+            Note - In case if nothing  is visible then its due to request overflow. I suggest you to check it later.
             </pre>
             <pre>
             
