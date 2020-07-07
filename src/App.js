@@ -42,7 +42,7 @@ class App extends Component {
     
     const imgStyle = {
       height: "180px",
-      width: "320px"
+      width: "355px"
 
     }
 
