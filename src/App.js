@@ -24,7 +24,8 @@ class App extends Component {
       .then(res => res.json())
       .then(
         (result) => {
-          this.setState({
+          if(result.hdurl!=undefined) {
+          	this.setState({
             nasaData:result,
             content: {
               display: "block",      
@@ -32,7 +33,8 @@ class App extends Component {
             loader: {
               display: "none",      
             }
-          });
+          });	
+          }
         }
       )
   }
@@ -105,7 +107,7 @@ class App extends Component {
 
           <center>
             <pre>
-            Note - In case if nothing  is visible then its due to request overflow. I suggest you to check it later.
+            Note - In case if you are seeing default image is due to image is not publish by NASA APOD for the current date.
             </pre>
             <pre>
             
