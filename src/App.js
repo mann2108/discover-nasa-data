@@ -30,7 +30,7 @@ class App extends Component {
       .then(res => res.json())
       .then(
         (result) => {
-          if(result.url!=undefined) {
+          if(result.url!==undefined) {
           	this.setState({
             nasaData:result,
             content: {
@@ -42,7 +42,7 @@ class App extends Component {
 
           });
           }
-         if(result.media_type=="video") {
+         if(result.media_type==="video") {
          	this.setState({
          		video: {
          			display: "block",
@@ -97,7 +97,7 @@ class App extends Component {
             <div className="banner-text">
               <h1 style={headingStyle} className="responsive-headline">Astronomy Picture of the Day</h1>
               <h3> Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer.</h3>
-              <img src="./images/nasa-logo-web-rgb.png" style={imgStyle}/>
+              <img src="./images/nasa-logo-web-rgb.png" style={imgStyle} alt="nasa logo"/>
               <h3 style={this.state.image}>Today's Image : {this.state.nasaData.title}</h3>
               <h3 style={this.state.video}>Today's Video : {this.state.nasaData.title}</h3>
               <h3>{this.state.nasaData.date}</h3>
@@ -110,14 +110,14 @@ class App extends Component {
         <section id="about" style={this.state.content}>
           
           <div className="row">
-             <div>
+             <div height="50%">
                 <center><h2 style = {this.state.image}>Image : {this.state.nasaData.title}</h2></center>
                 <center><h2 style = {this.state.video}>Video : {this.state.nasaData.title}</h2></center>
-                <img src={this.state.nasaData.url} style = {this.state.image} alt="Nasa APOD Image" />
+                <img src={this.state.nasaData.url} style = {this.state.image} alt="Nasa APOD" />
                 
 
                 <center>
-     			<iframe style={this.state.video} src={this.state.nasaData.url} height="10%"
+     			<iframe style={this.state.video} src={this.state.nasaData.url} height="350px" width="70%"
         		frameBorder='0'
         		allow='autoplay; encrypted-media'
         		allowFullScreen
@@ -131,6 +131,7 @@ class App extends Component {
                 <h2 style={this.state.image}>Explanation of image : </h2>
                 <h2 style={this.state.video}>Explanation of video : </h2>
                 <p>{this.state.nasaData.explanation}</p>
+                <center><p>Copyright : {this.state.nasaData.copyright}</p></center>
              </div>
           </div>
         
